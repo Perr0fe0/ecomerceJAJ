@@ -3,7 +3,7 @@
 
 import { useGetProductBySlug } from '@/api/getProductBySlug';
 import { useParams } from 'next/navigation';
-import SkeletonProduct from './components/Skeleton-product';
+import SkeletonProduct from './components/skeleton-products';
 import CarouselProduct from './components/carousel-product';
 import InfoProduct from './components/info-product';
 
