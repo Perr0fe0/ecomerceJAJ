@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 'use client';
-
+import { ResponseType } from '@/types/response';
 import { useGetProductBySlug } from '@/api/getProductBySlug';
 import { useParams } from 'next/navigation';
 import SkeletonProduct from './components/skeleton-products';
@@ -11,7 +11,7 @@ export default function Page() {
   const params = useParams();
   const {productSlug} = params;
   
-  const {result}: ResponseType = useGetProductBySlug(productSlug);
+  const {result}:ResponseType= useGetProductBySlug(productSlug);
   
 
   {/*Mostrar Esqueleto al cargar datos*/}
