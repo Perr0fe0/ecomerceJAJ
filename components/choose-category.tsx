@@ -5,8 +5,6 @@ import { useGetCategories } from '@/api/getProducts';
 import { categoryType } from '@/types/category';
 import { ResponseType } from '@/types/response';
 import Link from 'next/link';
-import React from 'react';
-
 const ChooseCategory = () => {
   const {result, loading, error}: ResponseType = useGetCategories();
   
